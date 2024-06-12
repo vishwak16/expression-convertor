@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Expression Converter</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Expression Converter</h1>
+    <label for="expression">Enter the expression:</label>
+    <input type="text" id="expression" placeholder="Enter expression">
+    <select id="notation">
+        <option value="prefix">Prefix</option>
+        <option value="postfix">Postfix</option>
+    </select>
+    <button onclick="convertExpression()">Convert</button>
+    <div id="result"></div>
+    <div id="stack-table"></div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
